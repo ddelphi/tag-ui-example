@@ -1,0 +1,113 @@
+
+body
+	background-color: #5C9329
+	font: 14px arial
+	margin: 50px 20px
+
+// --------------------
+// layout
+// --------------------
+
+.section
+	position: relative
+	float: left
+	clear: both
+
+
+
+// --------------------
+// modules
+// --------------------
+
+// box module
+.type-box
+	margin: 0 20px 10px
+	padding: 20px 30px
+	min-width: 540px
+	border: 2px solid #C1C1BE
+	background-color: #F7F6F2
+	border-radius: 6px 6px
+	color: #838383
+
+
+// option module, using box module
+#option
+	.option-inner
+		overflow: hidden
+		
+		.item
+			float: left
+			margin-right: 14px
+			padding: 6px 4px
+			cursor: pointer
+		
+		.highlight
+			border-bottom: 3px solid #FFA981
+
+		.showCloseBtn
+			float: right
+			margin: 6px 14px
+			cursor: pointer
+
+
+// tag module, using box module
+#tag, #currentTag
+	
+	.tag-inner, .currentTag-inner
+		overflow: hidden
+		
+		.item
+			float: left
+			margin: 5px 5px
+			cursor: pointer
+			
+			.title
+				display: inline-block
+				padding: 0.5em 1.3em
+				border-radius: 2px 2px
+				background-color: #DBDBDB
+				color: #7A7A7A
+			
+			.close
+				display: none
+				padding: 0 4px
+				font: 900 13px arial
+				color: #FB8561
+			
+			.close:hover
+				color: #555
+
+		.item:hover
+			.title
+				background-color: #E7E7E7
+
+		.current
+			.title
+				background-color: #81EAF7
+				color: #39783D
+
+		.current:hover
+			.title
+				background-color: #81EAF7
+
+	.tag-ft, .currentTag-ft
+		overflow: hidden
+		position: absolute
+		right: 0
+		bottom: 0
+
+	// attach to .tag-inner
+	.showClose
+		.item
+			.close
+				display: inline-block
+
+
+.hide
+	display: none
+
+
+
+
+
+
