@@ -1,0 +1,69 @@
+body {
+  background-color: #5c9329;
+  font: 14px arial;
+  margin: 50px 20px; }
+
+.section {
+  position: relative;
+  float: left;
+  clear: both; }
+
+.type-box {
+  margin: 0 20px 10px;
+  padding: 20px 30px;
+  min-width: 540px;
+  border: 2px solid #c1c1be;
+  background-color: #f7f6f2;
+  border-radius: 6px 6px;
+  color: #838383; }
+
+#option .option-inner {
+  overflow: hidden; }
+  #option .option-inner .item {
+    float: left;
+    margin-right: 14px;
+    padding: 6px 4px;
+    cursor: pointer; }
+  #option .option-inner .highlight {
+    border-bottom: 3px solid #ffa981; }
+  #option .option-inner .showCloseBtn {
+    float: right;
+    margin: 6px 14px;
+    cursor: pointer; }
+
+#tag .tag-inner, #tag .currentTag-inner, #currentTag .tag-inner, #currentTag .currentTag-inner {
+  overflow: hidden; }
+  #tag .tag-inner .item, #tag .currentTag-inner .item, #currentTag .tag-inner .item, #currentTag .currentTag-inner .item {
+    float: left;
+    margin: 5px 5px;
+    cursor: pointer; }
+    #tag .tag-inner .item .title, #tag .currentTag-inner .item .title, #currentTag .tag-inner .item .title, #currentTag .currentTag-inner .item .title {
+      display: inline-block;
+      padding: 0.5em 1.3em;
+      border-radius: 2px 2px;
+      background-color: #dbdbdb;
+      color: #7a7a7a; }
+    #tag .tag-inner .item .close, #tag .currentTag-inner .item .close, #currentTag .tag-inner .item .close, #currentTag .currentTag-inner .item .close {
+      display: none;
+      padding: 0 4px;
+      font: 900 13px arial;
+      color: #fb8561; }
+    #tag .tag-inner .item .close:hover, #tag .currentTag-inner .item .close:hover, #currentTag .tag-inner .item .close:hover, #currentTag .currentTag-inner .item .close:hover {
+      color: #555555; }
+  #tag .tag-inner .item:hover .title, #tag .currentTag-inner .item:hover .title, #currentTag .tag-inner .item:hover .title, #currentTag .currentTag-inner .item:hover .title {
+    background-color: #e7e7e7; }
+  #tag .tag-inner .current .title, #tag .currentTag-inner .current .title, #currentTag .tag-inner .current .title, #currentTag .currentTag-inner .current .title {
+    background-color: #81eaf7;
+    color: #39783d; }
+  #tag .tag-inner .current:hover .title, #tag .currentTag-inner .current:hover .title, #currentTag .tag-inner .current:hover .title, #currentTag .currentTag-inner .current:hover .title {
+    background-color: #81eaf7; }
+#tag .tag-ft, #tag .currentTag-ft, #currentTag .tag-ft, #currentTag .currentTag-ft {
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  bottom: 0; }
+#tag .showClose .item .close, #currentTag .showClose .item .close {
+  display: inline-block; }
+
+.hide {
+  display: none; }

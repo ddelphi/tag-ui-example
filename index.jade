@@ -1,0 +1,49 @@
+doctype html
+html
+	head
+		title.
+			tag ui example
+		link(type="text/css" rel="stylesheet" href="./style.css")
+	body
+		.bodyWrapper
+			.section
+				#option.type-box
+					.option-inner
+						#normal.item.
+							normal
+						#group.item.
+							group
+						.showCloseBtn.
+							show close button
+			.section
+				#tag.type-box
+					.tag-inner
+					.tag-ft
+			.section
+				#currentTag.type-box
+					.currentTag-inner
+					.currentTag-ft
+		script.template.tag-single(type="text/template")
+			span.item
+				span.title.
+					<%= name %>
+				span.close.
+					x
+		script.template.currentTag-single(type="text/template")
+			span.item
+				span.title.
+					<%= name %>
+				span.close.
+					x
+		
+		script(src="./lib/jquery/jquery.min.js")
+		script(src="./lib/underscore/underscore.js")
+		script(src="./lib/backbone/backbone.js")
+		script(src="./js/app.js")
+		script(src="./js/eventSystem.js")
+		script(src="./js/models.js")
+		script(src="./js/views.js")
+		script(src="./js/remoteDb_example.js")
+		script(src="./test/Unittest.js")
+		script(src="./test/test_all.js")
+		
